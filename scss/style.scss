@@ -4,24 +4,77 @@
 @mixin logo-font {
   font-family: 'Pacifico', cursive;
 }
+
 @mixin header-font {
   font-family: 'Bebas Neue', cursive;
 }
+
 @mixin main-font {
   font-family: 'Arimo', sans-serif;
 }
 
 // === /Mixins ===
 // === Variables ===
+$brand-color: #474747;
+$alter-brand-color:#a5a5a5;
 // === /Variables ===
-
-body {
+// === Common ===
+* {
   box-sizing: border-box;
 }
 
-h1 {
-  display: block;
-  width: 600px;
-  height: 600px;
-  background-color: #fff;
+body {
+  @include main-font;
+}
+
+.inner-block {
+  max-width: 940px;
+  margin: 0 auto;
+}
+// === /Common ===
+
+.header {
+  padding: 36px 0;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &-logo {
+    &__text {
+      @include logo-font;
+
+      font-size: 42px;
+      color: $brand-color;
+      text-decoration: none;
+    }
+  }
+
+  &-nav {
+    &__wrap {
+      display: flex;
+      list-style-type: none;
+
+      &-item {
+        margin-left: 60px;
+
+        &-link {
+          @include header-font;
+
+          font-size: 20px;
+          line-height: 21px;
+          color: $brand-color;
+          text-align: left;
+          text-decoration: none;
+          text-transform: uppercase;
+
+          div {
+            font-size: 12px;
+            color: $alter-brand-color;
+          }
+        }
+      }
+    }
+  }
 }
