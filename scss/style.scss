@@ -1,0 +1,20 @@
+@import "normalize.scss";
+
+// === Mixins ===
+
+// === /Mixins ===
+// === Variables ===
+$color-main: green;
+// === /Variables ===
+
+
+body {
+  background-color: $color-main;
+}
+
+h1 {
+  display: block;
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+}

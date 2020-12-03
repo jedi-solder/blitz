@@ -1,0 +1,28 @@
+{
+  "name": "blitz",
+  "version": "1.0.0",
+  "description": "Just for training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jedi-solder/blitz.git"
+  },
+  "author": "jedi-soldier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jedi-solder/blitz/issues"
+  },
+  "homepage": "https://github.com/jedi-solder/blitz#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-stylelint": "^13.0.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-recess-order": "^2.3.0",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}
