@@ -1,15 +1,22 @@
 @import "normalize.scss";
 
 // === Mixins ===
+@mixin logo-font {
+  font-family: 'Pacifico', cursive;
+}
+@mixin header-font {
+  font-family: 'Bebas Neue', cursive;
+}
+@mixin main-font {
+  font-family: 'Arimo', sans-serif;
+}
 
 // === /Mixins ===
 // === Variables ===
-$color-main: green;
 // === /Variables ===
 
-
 body {
-  background-color: $color-main;
+  box-sizing: border-box;
 }
 
 h1 {
